@@ -1,0 +1,39 @@
+apiVersion: operator.ibm.com/v1alpha1
+kind: HealthService
+metadata:
+  name: system-healthcheck-service
+  labels:
+    app.kubernetes.io/instance: ibm-healthcheck-operator
+    app.kubernetes.io/managed-by: ibm-healthcheck-operator
+    app.kubernetes.io/name: ibm-healthcheck-operator
+spec:
+  memcached:
+    name: icp-memcached
+    replicas: 1
+    command:
+    - memcached
+    - -m 64
+    - -o
+    - modern
+    - -v
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "50m"
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
+  healthService:
+    name: system-healthcheck-service
+    configmapName: system-healthcheck-service-config
+    replicas: 1
+    #cloudpakNameSetting: Labels/Annotations:name
+    serviceNameSetting: Annotations:productName
+    #dependsSetting: Labels/Annotations:name
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "50m"
+      limits:
+        memory: "512Mi"
+        cpu: "500m"

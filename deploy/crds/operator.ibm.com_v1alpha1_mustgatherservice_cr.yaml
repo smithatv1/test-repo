@@ -1,0 +1,26 @@
+apiVersion: operator.ibm.com/v1alpha1
+kind: MustGatherService
+metadata:
+  name: must-gather-service
+  labels:
+    app.kubernetes.io/instance: ibm-healthcheck-operator
+    app.kubernetes.io/managed-by: ibm-healthcheck-operator
+    app.kubernetes.io/name: ibm-healthcheck-operator
+spec:
+  # Add fields here
+  persistentVolumeClaim:
+    name: must-gather-pvc
+    storageClassName: ""
+    resources:
+      requests:
+        storage: 5Gi
+  mustGather:
+    name: must-gather-service
+    replicas: 1
+    resources:
+      requests:
+        memory: "64Mi"
+        cpu: "50m"
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
