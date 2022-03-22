@@ -3,22 +3,30 @@ module github.com/IBM/ibm-healthcheck-operator
 go 1.14
 
 require (
-	cloud.google.com/go v0.54.0 // indirect
-	github.com/golang/protobuf v1.4.2 // indirect
+	github.com/Azure/go-autorest/autorest v0.11.18 // indirect
+	github.com/emicklei/go-restful v2.9.6+incompatible // indirect
+	github.com/form3tech-oss/jwt-go v3.2.3+incompatible // indirect
+	github.com/go-openapi/jsonreference v0.19.5 // indirect
+	github.com/go-openapi/swag v0.19.14 // indirect
+	github.com/google/go-cmp v0.5.6 // indirect
 	github.com/gophercloud/gophercloud v0.7.0 // indirect
-	github.com/operator-framework/operator-sdk v0.13.0
-	github.com/pkg/errors v0.9.1 // indirect
+	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/spf13/pflag v1.0.5
-	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae // indirect
-	google.golang.org/protobuf v1.24.0 // indirect
-	gopkg.in/yaml.v2 v2.2.8 // indirect
-	k8s.io/api v0.17.2
-	k8s.io/apimachinery v0.17.2
+	golang.org/x/crypto v0.0.0-20210817164053-32db794688a5 // indirect
+	golang.org/x/lint v0.0.0-20210508222113-6edffad5e616 // indirect
+	golang.org/x/net v0.0.0-20211209124913-491a49abca63 // indirect
+	golang.org/x/sys v0.0.0-20220224120231-95c6836cb0e7 // indirect
+	golang.org/x/tools v0.1.9 // indirect
+	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
+	k8s.io/api v0.23.1
+	k8s.io/apiextensions-apiserver v0.23.1 // indirect
+	k8s.io/apimachinery v0.23.1
 	k8s.io/client-go v12.0.0+incompatible
+	k8s.io/component-base v0.23.1 // indirect
 	k8s.io/klog v1.0.0
-	k8s.io/kube-openapi v0.0.0-20190918143330-0270cf2f1c1d
-	sigs.k8s.io/controller-runtime v0.5.2
-	sigs.k8s.io/yaml v1.1.0
+	k8s.io/kube-openapi v0.0.0-20211115234752-e816edb12b65
+	sigs.k8s.io/controller-runtime v0.11.0
+	sigs.k8s.io/yaml v1.3.0
 )
 
 // Pinned to kubernetes-1.16.2
