@@ -11,14 +11,13 @@ require (
 	github.com/spf13/pflag v1.0.5
 	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae // indirect
 	google.golang.org/protobuf v1.24.0 // indirect
-	gopkg.in/yaml.v2 v2.2.8 // indirect
 	k8s.io/api v0.17.2
 	k8s.io/apimachinery v0.17.2
 	k8s.io/client-go v12.0.0+incompatible
 	k8s.io/klog v1.0.0
 	k8s.io/kube-openapi v0.0.0-20190918143330-0270cf2f1c1d
 	sigs.k8s.io/controller-runtime v0.5.2
-	sigs.k8s.io/yaml v1.1.0
+	sigs.k8s.io/yaml v1.3.0
 )
 
 // Pinned to kubernetes-1.16.2
