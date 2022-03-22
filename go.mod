@@ -1,6 +1,6 @@
 module github.com/IBM/ibm-healthcheck-operator
 
-go 1.14
+go 1.15
 
 require (
 	github.com/Azure/go-autorest/autorest v0.11.18 // indirect
