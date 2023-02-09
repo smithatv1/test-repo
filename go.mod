@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/Azure/go-autorest/autorest v0.11.18 // indirect
-	github.com/emicklei/go-restful v2.9.6+incompatible // indirect
+	github.com/emicklei/go-restful v2.16.0+incompatible // indirect
 	github.com/form3tech-oss/jwt-go v3.2.3+incompatible // indirect
 	github.com/go-openapi/jsonreference v0.19.5 // indirect
 	github.com/go-openapi/swag v0.19.14 // indirect
